@@ -23,7 +23,7 @@
     @include('partials.header')
 
     <div class="d-flex align-items-stretch">
-        @include('partials.sidebar')
+        {{-- @include('partials.sidebar') --}}
 
         <main class="flex-grow-1" style="min-width: 0;">
             @yield('content')

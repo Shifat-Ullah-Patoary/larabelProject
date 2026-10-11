@@ -1,6 +1,4 @@
-
-<aside id="appSidebar"
-       class="dashboard-sidebar text-white flex-shrink-0">
+<aside id="appSidebar" class="dashboard-sidebar text-white flex-shrink-0">
 
     <!-- Sidebar Brand -->
     <div class="sidebar-brand px-3 py-4 border-bottom border-secondary">
@@ -23,8 +21,7 @@
             <div>
                 <div class="fw-semibold">Administrator</div>
                 <small class="text-white-50">
-                    <i class="bi bi-circle-fill text-success me-1"
-                       style="font-size: 8px;"></i>
+                    <i class="bi bi-circle-fill text-success me-1" style="font-size: 8px;"></i>
                     Online
                 </small>
             </div>
@@ -40,13 +37,13 @@
         <nav class="nav flex-column gap-1 mt-3">
 
             <a href="{{ route('dashboard') }}"
-               class="nav-link sidebar-link {{ request()->routeIs('dashboard') ? 'active' : '' }}">
+                class="nav-link sidebar-link {{ request()->routeIs('dashboard') ? 'active' : '' }}">
                 <i class="bi bi-speedometer2 me-2"></i>
                 Dashboard
             </a>
 
             <a href="{{ route('dashboard.v2') }}"
-               class="nav-link sidebar-link {{ request()->routeIs('dashboard.v2') ? 'active' : '' }}">
+                class="nav-link sidebar-link {{ request()->routeIs('dashboard.v2') ? 'active' : '' }}">
                 <i class="bi bi-grid me-2"></i>
                 Dashboard v2
             </a>

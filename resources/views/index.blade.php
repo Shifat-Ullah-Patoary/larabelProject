@@ -1,5 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
+@section('content')
+
+
+{{-- <!DOCTYPE html> --}}
+{{-- <html lang="en"> --}}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +15,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .hero-section {
-            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), 
-                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)),
+                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
             color: white;
             padding: 120px 0;
         }
+
         .service-card {
             border: none;
             border-radius: 12px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .service-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
         }
+
         .icon-box {
             width: 70px;
             height: 70px;
@@ -36,9 +44,10 @@
         }
     </style>
 </head>
+
 <body class="bg-light">
 
-    <!-- Navigation Bar -->
+    {{-- <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold text-uppercase tracking-wide" href="#">
@@ -56,7 +65,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> --}}
 
     <!-- Hero Section -->
     <header id="home" class="hero-section text-center">
@@ -83,12 +92,15 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="card service-card h-100 shadow-sm p-4 text-center">
                         <div class="card-body">
-                            <div class="icon-box bg-primary-subtle text-primary">
-                                <i class="fa-solid fa-plane-departure"></i>
+                            <!-- Service Image -->
+                            <div class="service-image mb-3">
+                                <img src="{{ asset('assets/images/travel.jpg') }}" alt="Diamond Travel & Tours"
+                                    class="img-fluid">
                             </div>
                             <h4 class="card-title fw-bold mb-3">Diamond Travel & Tours</h4>
                             <p class="card-text text-secondary">
-                                Exceptional travel packages, flight reservations, tour management, and personalized holiday itineraries around the world.
+                                Exceptional travel packages, flight reservations, tour management, and personalized
+                                holiday itineraries around the world.
                             </p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pt-0">
@@ -101,12 +113,14 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="card service-card h-100 shadow-sm p-4 text-center">
                         <div class="card-body">
-                            <div class="icon-box bg-success-subtle text-success">
-                                <i class="fa-solid fa-truck-fast"></i>
+                            <div class="service-image mb-3">
+                                <img src="{{ asset('assets/images/transport.jpg') }}" alt="Diamond Transport"
+                                    class="img-fluid">
                             </div>
                             <h4 class="card-title fw-bold mb-3">Diamond Transport</h4>
                             <p class="card-text text-secondary">
-                                Reliable freight logistics, fleet rental services, and nation-wide commercial transportation solutions built on safety and speed.
+                                Reliable freight logistics, fleet rental services, and nation-wide commercial
+                                transportation solutions built on safety and speed.
                             </p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pt-0">
@@ -119,12 +133,14 @@
                 <div class="col-lg-4 col-md-6 mx-auto">
                     <div class="card service-card h-100 shadow-sm p-4 text-center">
                         <div class="card-body">
-                            <div class="icon-box bg-warning-subtle text-warning-emphasis">
-                                <i class="fa-solid fa-cubes-stacked"></i>
+                             <div class="service-image mb-3">
+                                <img src="{{ asset('assets/images/brick.jpg') }}" alt="Diamond Transport"
+                                    class="img-fluid">
                             </div>
-                            <h4 class="card-title fw-bold mb-3">Send Cement Concrete</h4>
+                            <h4 class="card-title fw-bold mb-3">Brick, Send, Concrete</h4>
                             <p class="card-text text-secondary">
-                                High-grade ready-mix concrete, sand, cement supply, and heavy material delivery tailored for durable infrastructure construction.
+                                High-grade ready-mix concrete, sand, cement supply, and heavy material delivery tailored
+                                for durable infrastructure construction.
                             </p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pt-0">
@@ -137,14 +153,18 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact" class="bg-dark text-white py-4 mt-5">
+    {{-- <footer id="contact" class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
             <p class="mb-1">&copy; {{ date('Y') }} <strong>Diamond Group</strong>. All rights reserved.</p>
             <small class="text-secondary">Providing quality solutions in Travel, Transport, and Construction.</small>
         </div>
-    </footer>
+    </footer> --}}
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+
+
+
+{{-- </html> --}}
+@endsection
