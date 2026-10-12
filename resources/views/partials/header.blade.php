@@ -17,7 +17,7 @@
                      </a>
                  </li>
                  <li class="nav-item"><a class="nav-link" href="{{ route('contract.submit') }}">Contact</a></li>
-                 <li class="nav-item"><a class="nav-link" href="{{ route('login.page') }}">Login</a></li>
+                 <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
              </ul>
          </div>
      </div>

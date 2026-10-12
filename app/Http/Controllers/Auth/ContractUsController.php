@@ -17,7 +17,7 @@ class ContractUsController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
+            'email' => 'required|email|max:255|unique:contacts,email',
             'subject' => 'required|string|max:255',
             'message' => 'required|string',
         ]);
